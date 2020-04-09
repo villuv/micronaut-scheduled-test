@@ -62,7 +62,7 @@ Branch 'case-3'
 ### Conditions:
 * `ScheduledBean` has no class-level annotations
 * `ScheduledBean` is created by factory
-* `ScheduledBean` does not have any dependencies
+* `ScheduledBean` depends on `DummyService` bean, uses constructor injection.
 
 ### Result:
 Exception:
@@ -92,5 +92,5 @@ io.micronaut.context.exceptions.NonUniqueBeanException: Multiple possible bean c
 This is repeated on every scheduled interval
 
 ### My expectations:
-* An single instance of `ScheduledBean` is created by factory
+* A single instance of `ScheduledBean` is created by factory
 * Scheduling should work
