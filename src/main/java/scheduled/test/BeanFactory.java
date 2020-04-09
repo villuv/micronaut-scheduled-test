@@ -17,11 +17,9 @@ public class BeanFactory {
   }
 
   // Comment this method out to make it work, it even magically injects DummyService into constructor
-  /*
   @Singleton
   public ScheduledBean scheduledBean(DummyService dummyService) {
     LOGGER.info("Factory creates ScheduledBean");
     return new ScheduledBean(dummyService);
   }
-  */
 }
