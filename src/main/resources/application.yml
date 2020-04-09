@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: scheduled-test
+  server:
+    port: 5050

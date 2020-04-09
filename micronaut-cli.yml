@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: scheduled.test
+---
+testFramework: junit
+sourceLanguage: java
