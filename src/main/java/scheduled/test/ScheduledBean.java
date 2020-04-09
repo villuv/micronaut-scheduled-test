@@ -1,11 +1,14 @@
 package scheduled.test;
 
+import io.micronaut.context.annotation.Requires;
 import io.micronaut.scheduling.annotation.Scheduled;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//@Singleton
-//@Requires(env = "xyz")
+import javax.inject.Singleton;
+
+@Singleton
+@Requires(env = "xyz")
 public class ScheduledBean {
   private static final Logger LOGGER = LoggerFactory.getLogger(ScheduledBean.class);
   private final DummyService dummyService;
