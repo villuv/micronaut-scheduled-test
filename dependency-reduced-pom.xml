@@ -184,7 +184,7 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <micronaut.version>2.0.0.M2</micronaut.version>
+    <micronaut.version>2.0.0.M3</micronaut.version>
     <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <exec.mainClass>scheduled.test.Application</exec.mainClass>
     <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
